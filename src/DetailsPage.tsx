@@ -34,16 +34,13 @@ const DetailsPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        console.log("Fetching details for post ID:", id);
+
         const response = await fetch(
           `https://1hmfpsvto6.execute-api.ap-northeast-1.amazonaws.com/dev/posts/${id}`
         );
         const result = await response.json() as ApiResponse;
-        console.log("Fetched details data:", result);
 
         setDetailsData(result.post);
-      } catch (error) {
-        console.error("Error fetching details:", error);
       } finally {
         setLoading(false); // データ取得が完了したらローディングを終了
       }
