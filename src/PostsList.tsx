@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useState } from 'react'
 import './App.css';
 import { Link } from 'react-router-dom';
@@ -14,7 +15,7 @@ type PostsType = {
   posts: ArticleType[];
 }
 
-const PostsList = () => {
+const PostsList: React.FC = () => {
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
