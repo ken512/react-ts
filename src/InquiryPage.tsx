@@ -68,7 +68,7 @@ const InquiryPage: React.FC = () => {
     }
   };
 
-  const handleClear = (): void => {
+  const handleClear = () => {
     setInquiryData({ name: "", email: "", message: "" });
   };
   return (
