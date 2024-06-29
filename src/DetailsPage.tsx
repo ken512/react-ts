@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import "./App.css";
@@ -15,7 +16,7 @@ type ApiResponse = {
   post: detailsType;
 }
 
-const DetailsPage = () => {
+const DetailsPage: React.FC = () => {
   const { id } = useParams();
 
   const formatDate = (dateString: string): string => {
