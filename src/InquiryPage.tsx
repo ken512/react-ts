@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from "react-router-dom";
 import { FormEvent, useState } from "react";
 import "./App.css";
@@ -14,7 +15,7 @@ type ErrorsType = {
   message?: string;
 };
 
-const InquiryPage = () => {
+const InquiryPage: React.FC = () => {
   const [inquiryData, setInquiryData] = useState<InquiryType>({
     name: "",
     email: "",
