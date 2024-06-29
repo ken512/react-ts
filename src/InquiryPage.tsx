@@ -26,7 +26,7 @@ const InquiryPage: React.FC = () => {
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ): void => {
+  ) => {
     const { id, value } = e.target;
     setInquiryData((prevData) => ({ ...prevData, [id]: value }));
   };
