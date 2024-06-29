@@ -29,7 +29,7 @@ const DetailsPage: React.FC = () => {
     return date.toLocaleDateString("ja-JP", options);
   };
 
-  const [detailsData, setDetailsData] = useState<detailsType | null>(null);
+  const [detailsData, setDetailsData] = useState<detailsType>();
   const [loading, setLoading] = useState<boolean>(true); // ローディング状態を追加
 
   useEffect(() => {
